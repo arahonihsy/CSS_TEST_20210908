@@ -1,0 +1,181 @@
+body {
+  width: 1000px;
+  /* ブラウザの中央寄せ */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* タイトルブロックのサイズ指定 */
+/* 文字を中央配置にしたいのでflexboxを使用 */
+
+h1 {
+  height: 400px;
+  width: 100%;
+
+  background-image: url(../img/firstview.jpg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 div {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Aboutの装飾 */
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+
+  margin-top: 70px;
+}
+
+/* Aboutの説明文 */
+.P_about {
+  text-align: center;
+  line-height: 150%;
+
+  margin-top: 70px;
+}
+
+.P_about span {
+  font-weight: bold;
+}
+
+/* ブログの箇所 */
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+
+  margin-top: 70px;
+}
+
+/* ブログの絵を並べる */
+/* Flexboxを使用 親要素のdiv imate_containerを作成*/
+
+.image_container {
+  /* コンテナのサイズと位置調節 */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 70px;
+}
+
+/* 画像のサイズ調節 コンテナの子要素を30%にした。(flexboxで並ぶ)その30%の子要素に対してimgを100%サイズに */
+.image_container div {
+  width: 30%;
+}
+
+img {
+  width: 100%;
+}
+
+/*画像の間に空白を入れる 中央の画像に左右のマージンを入れて調節 */
+.image_container div:nth-child(2) {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* ブログの説明文 */
+/* イメージの子要素なので、flexboxで勝手に整列する */
+h4 {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* お問い合わせ */
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  margin-top: 70px;
+}
+
+/* フォーム幅は固定 マージンで中央寄せ*/
+form {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+/* フォームに対してテーブルの幅 */
+table {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* thの幅(ラベル)を指定*/
+th {
+  width: 30%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* tdの幅(記入欄)を指定*/
+td {
+  width: 70%;
+}
+
+/* フォームの記入欄の幅をtdに合わせる*/
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+
+  margin-bottom: 10px;
+}
+
+/* フォームの記入欄の幅をtdに合わせる textareaの高さを決める*/
+textarea {
+  width: 100%;
+  height: 150px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ラベル"内容"を中央に */
+.label_content {
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* ボタンを中央揃え */
+.button {
+  text-align: center;
+}
+
+/* ボタン共通の装飾 */
+.button input {
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 0px;
+}
+
+/* 削除ボタン共通の装飾 */
+.button input:first-child {
+  background-color: lightgray;
+  margin-right: 10px;
+}
+
+/* 送信ボタン共通の装飾 */
+.button input:last-child {
+  background-color: rgb(83, 168, 168);
+  border-radius: 0px;
+  color: white;
+  margin-left: 10px;
+}
